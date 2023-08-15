@@ -2,9 +2,9 @@
   <section
     class="flex items-center px-10 mx-10 absolute top-[10vh] min-h-[90vh] bg-herobg bg-cover bg-no-repeat select-auto"
   >
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-10">
       <p class="text-brandtextlight uppercase tracking-widest">{{ text[0] }}</p>
-      <p class="text-white text-7xl">{{ text[1] }}</p>
+      <p class="text-white text-7xl leading-[80px]">{{ text[1] }}</p>
       <p class="text-brandtextfade">{{ text[2] }}</p>
       <button class="text-white uppercase self-start bg-brand px-4 py-2">
         {{ button }}
