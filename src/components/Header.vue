@@ -1,40 +1,66 @@
 <template>
   <section class="h-[50vh] bg-brandbg select-none">
     <div
-      class="h-[10vh] flex items-center w-screen overflow-hidden text-brandtext px-10"
+      class="h-[10vh] flex items-center w-screen overflow-hidden text-brandtext px-5 md:px-10"
     >
-      <div class="w-1/3 h-full uppercase flex items-center font-bold text-3xl">
+      <div
+        class="md:w-1/4 lg:w-1/3 h-full uppercase flex items-center font-bold text-3xl border border-green-600"
+      >
         <p class="cursor-pointer">{{ logo }}</p>
       </div>
       <div
-        class="w-1/3 h-full flex capitalize items-center justify-evenly font-normal"
+        v-show="navShow"
+        class="absolute top-0 left-0 w-screen z-20 md:z-0 bg-white md:bg-transparent flex-col md:flex-row justify-center gap-6 md:static md:w-2/4 lg:w-1/3 h-screen md:h-full flex capitalize items-center md:justify-evenly md:gap-0 font-normal border border-blue-600"
       >
-        <ul v-for="items in navItems" :key="items">
+        <ul v-for="items in navItems" :key="items" class="z-30">
           <li class="cursor-pointer">{{ items }}</li>
         </ul>
+        <ul>
+          <li v-show="navShow" class="md:hidden">contact</li>
+        </ul>
       </div>
-      <div class="w-1/3 h-full flex items-center justify-end">
+      <div
+        class="md:w-1/4 lg:w-1/3 h-full hidden md:flex items-center justify-end border border-pink-600"
+      >
         <button
-          class="uppercase border p-2 w-[8vw] border-brand text-brand font-semibold"
+          class="uppercase border p-2 lg:w-[8vw] border-brand text-brand font-semibold"
         >
           {{ button }}
         </button>
+      </div>
+      <div
+        @click="toggleNav()"
+        class="flex md:hidden border border-brand text-brand text-lg p-3 ml-auto"
+      >
+        <span v-if="!navShow" class="material-symbols-outlined"> menu </span>
+        <span v-else class="material-symbols-outlined z-20"> close </span>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   setup() {
     const navItems = ["about", "features", "services", "pricing", "blog"];
     const button = "contact";
     const logo = "hlt";
+    const navShow = ref(false);
+
+    const toggleNav = () => {
+      navShow.value = !navShow.value;
+
+      console.log("clicked");
+    };
 
     return {
       navItems,
       button,
       logo,
+      navShow,
+      toggleNav,
     };
   },
 };

@@ -5,5 +5,5 @@ import Hero from "../components/Hero.vue";
 
 <template>
   <Header />
-  <Hero />
+  <!-- <Hero /> -->
 </template>
