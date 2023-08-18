@@ -1,10 +1,10 @@
 <template>
-  <section class="h-[50vh] bg-brandbg select-none">
+  <section class="h-[50vh] bg-brandbg select-none mb-[50vh]">
     <div
-      class="h-[10vh] flex items-center w-screen overflow-hidden text-brandtext px-5 md:px-10"
+      class="h-[10vh] flex items-center w-[98.9vw] text-brandtext px-5 md:px-10"
     >
       <div
-        class="md:w-1/4 lg:w-1/3 h-full uppercase flex items-center font-bold text-3xl border"
+        class="md:w-1/4 lg:w-1/3 h-full uppercase flex items-center font-bold text-3xl"
       >
         <p class="cursor-pointer">{{ logo }}</p>
       </div>
@@ -20,10 +20,10 @@
         </ul>
       </div>
       <div
-        class="md:w-1/4 lg:w-1/3 h-full hidden md:flex items-center justify-end border"
+        class="md:w-1/4 lg:w-1/3 h-full hidden md:flex items-center justify-end"
       >
         <button
-          class="uppercase border p-2 lg:w-[8vw] border-brand text-brand font-semibold"
+          class="uppercase border p-2 lg:w-[8vw] border-brandlight text-brand font-semibold"
         >
           {{ button }}
         </button>

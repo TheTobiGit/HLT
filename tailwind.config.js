@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'brand': '#2381E8',
+        'brandlight': '#2381E84C',
         'brandtext': '#102852',
         'brandbg': '#DDE2EE',
         'brandtextlight': '#ABD3FF',
