@@ -12,7 +12,7 @@
         {{ button }}
       </button>
     </div>
-    <div class="mb-7 lg:mb-0">
+    <div class="mb-7 lg:mb-0 relative md:static right-5">
       <img src="../assets/hero.png" alt="" />
     </div>
   </section>
