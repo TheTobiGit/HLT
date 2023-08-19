@@ -1,7 +1,7 @@
 <template>
-  <section class="flex px-5 md:px-10 m-0 md:mx-10 min-h-[20vh] mt-[5vh]">
+  <section class="flex px-5 md:px-10 m-0 md:mx-10 min-h-[20vh] mb-[10vh]">
     <div
-      class="flex flex-col md:flex-row justify-evenly w-full font-semibold gap-9 md:gap-0"
+      class="flex flex-col lg:flex-row justify-evenly w-full font-semibold gap-9 lg:gap-0"
     >
       <div class="flex flex-col h-full md:min-w-[20vw] lg:w-[20vw]">
         <div class="flex flex-col md:flex-row gap-2 md:gap-5">
@@ -28,14 +28,14 @@
             <p class="text-base capitalize">{{ label[1] }}</p>
             <p class="font-medium">{{ text[1] }}</p>
             <button
-              class="uppercase border p-2 w-fit lg:w-[8vw] border-brandlight text-brand mt-auto"
+              class="uppercase border p-2 w-fit lg:min-w-[8vw] border-brandlight text-brand mt-auto"
             >
               {{ button }}
             </button>
           </div>
         </div>
       </div>
-      <div class="flex flex-col h-full md:min-w-[20vw] lg:w-[20vw]">
+      <div class="flex flex-col h-full md:min-w-[20vw] lg:min-w-[20vw]">
         <div class="flex flex-col md:flex-row gap-2 md:gap-5">
           <span
             class="material-symbols-outlined border border-gray-400 rounded-full p-2 h-fit w-fit"
@@ -94,3 +94,8 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+@media only screen and (min-width: 494px) and (max-width: 1022px) {
+}
+</style>

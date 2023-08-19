@@ -1,5 +1,5 @@
 <template>
-  <section class="h-[50vh] bg-brandbg select-none mb-[50vh]">
+  <section class="h-[10vh] select-none">
     <div
       class="h-[10vh] flex items-center w-[98.9vw] text-brandtext px-5 md:px-10"
     >

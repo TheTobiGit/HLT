@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col-reverse lg:flex-row items-center mx-5 p-5 md:px-10 md:mx-10 absolute top-[10vh] min-h-[90vh] bg-herobg bg-cover bg-no-repeat select-auto"
+    class="flex flex-col-reverse lg:flex-row items-center mx-5 p-5 md:px-10 md:mx-10 mb-[10vh] min-h-[90vh] bg-herobg bg-cover bg-no-repeat select-auto"
   >
     <div class="flex flex-col gap-5 lg:gap-10">
       <p class="text-brandtextlight uppercase tracking-widest">{{ text[0] }}</p>
@@ -13,7 +13,7 @@
       </button>
     </div>
     <div class="mb-7 lg:mb-0 relative md:static right-5">
-      <img src="../assets/hero.png" alt="" />
+      <img src="../assets/hero.png" alt="" class="" />
     </div>
   </section>
 </template>
