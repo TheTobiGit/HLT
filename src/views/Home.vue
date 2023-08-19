@@ -5,6 +5,7 @@ import Appointment from "../components/Appointment.vue";
 import BackgroundVue from "../components/Background.vue";
 import About from "../components/About.vue";
 import Features from "../components/Features.vue";
+import Services from "../components/Services.vue";
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import Features from "../components/Features.vue";
     <Appointment />
     <About />
     <Features />
+    <Services />
   </section>
 </template>
