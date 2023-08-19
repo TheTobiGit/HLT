@@ -10,7 +10,7 @@ export default {
     const text = [
       "services",
       "what we bring to you",
-      "healthy life cycle, a person needs to have a balanced diet and has to regularly exercise.",
+      "healthy life cycle, a person needs to have a balanced diet and has to regularly exercise. ",
     ];
 
     return {};
